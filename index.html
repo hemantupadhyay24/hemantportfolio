@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hemant Upadhyay</title>
+  <!-- css links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+  html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+table,tr, td,th{
+  text-align: left;
+  border:0px;
+  padding: 1rem;
+  width: 100%;
+}
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+.intro {
+  top: 0;
+  background: #e0ebe8;
+  min-height: 55vh;
+  padding-top: 45vh;
+  padding-bottom: 20vh;
+}
+
+.intro p {
+  color: green;
+}
+
+nav ul {
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  background-color: #e0ebe8;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 55px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+nav ul li a {
+  color: #008080;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: green;
+}
+
+.work {
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
+.work .work-header {
+  margin-top: 50px;
+  color: #008080;
+  font-weight: normal;
+}
+
+.project {
+  text-decoration: none;
+  color: #008080;
+  display: inline-block;
+  overflow: hidden;
+  border: 2px solid lightblue;
+  height: 220px;
+  width: 280px;
+  margin: 40px 100px;
+}
+
+.project-pic {
+  width: 100%;
+  height: 180px;
+  border-bottom: 2px solid lightblue;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+.show-all {
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  height: 30px;
+  margin: 20px auto 90px;
+   background: #e0ebe8;
+  color: #008080;
+  font-weight: bold;
+  font-size: 1em;
+  border: 2px solid #90C695;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-top:10px;
+}
+
+
+.show-all:hover {
+  background: #E4F1FE;
+  color: green;
+}
+
+@media only screen and (max-width: 500px) {
+  nav ul {
+    text-align: center;
+  }
+  nav ul li {
+    margin: 20px;
+  }
+  .project {
+    margin: 40px 0;
+  }
+}
+.education {
+  background-color: lightgray;
+}
+.contact {
+  /*   height:800px; */
+  /*   min-height:800px; */
+  background: #C8F7C5;
+  padding-top: 0vh;
+  padding-bottom: 10vh;
+}
+
+.header {
+  padding: 160px 0 110px;
+}
+
+.contact-details {
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 35px 45px 35px;
+  list-style-type: none;
+  border: 2px solid #90C695;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background: #e0ebe8;
+  color: #008080;
+  text-decoration: none;
+}
+
+.contact-details:hover {
+  background: #E4F1FE;
+  color: green;
+}
+
+footer {
+  padding: 20px;
+  background: #22313F;
+  color: white;
+  line-height: 40px;
+}
+
+footer a {
+  color: white;
+}
+
+@media only screen and (max-width: 367px) {
+ 
+  .contact-details {
+    border: 2px solid #90C695;
+    border-radius: 0;
+    width: 90px;
+    height: 20px;
+    padding: 10px;
+    line-height: normal;
+  }
+}
+</style>
+<body>
+  <nav>
+    <ul id='navbar'>
+      <li><a href="#welcome-section">About me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact me</a></li>
+    </ul>
+  </nav>
+
+  <div id="welcome-section" class="intro">
+    <a href="#"><img class="smaller-image thick-green-border" src="https://hrcdn.net/s3_pub/hr-avatars/8370ca39-3d26-47c1-adef-591a2d447d35/150x150.png"></a>
+    <h1>Hey, I am Hemant Upadhyay.</h1>
+    <p>An Algorithmic Enthusiast,upcoming Web Developer,also a Second year Under-Graduate Engineering Student</p>
+  </div>
+  <div id="projects" class="work">
+    <h2 class="work-header">These are some of my projects..</h2>
+
+    <a href="https://codepen.io/FreeCodeCamp/pen/KzXQgy" target="_blank" class="project project-tile">
+      <img class="project-pic" src="https://cloud.githubusercontent.com/assets/15967809/17642775/7d354304-6171-11e6-8b56-66eee4681d88.png" alt="project">
+      <div class="project-title">Tic Tac Toe Game</div>
+    </a>
+
+    <a href="#" class="show-all" target="_blank">Show all</a>
+  </div>
+  <!-- portfolio -->
+   <div id="education" class="education">
+    <div id="portfolio-section" class="jumbotron">
+      <div class="container-fluid">
+        <div id="myCarousel" class="carousel slide col-sm-12 col-sm-12" data-ride="carousel" data-interval="false">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="">
+                  <h3><kbd>Education</kbd></h3>
+                <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Course</th>
+                        <th>Institue Name</th>
+                        <th>Completion Year</th>
+                        <th>Percentage/Grade</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>B.E. in Information Technology</td>
+                        <td>Sardar Patel Institute of Technology</td>
+                        <td>2021</td>
+                        <td>10 CGPA</td>
+                      </tr>
+                      <tr>
+                        <td>Diploma in Information Engineering</td>
+                        <td>Government Polytechnic,Mumbai</td>
+                        <td>2018</td>
+                        <td>93.13 %</td>
+                      </tr>
+                      <tr>
+                        <td>Secondary School</td>
+                        <td>St.Xavier's High School</td>
+                        <td>2015</td>
+                        <td>89 %</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+               </div>
+              </div>
+
+
+      <div class="item">
+        <div class="">
+        <h3><kbd>Experience</kbd></h3>
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Company Name</th>
+                        <th>Duration</th>
+                        <th>Job</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>L & T Infotech,Madh</td>
+                        <td>April, 2014 - May-2014</td>
+                        <td>Industrial Training</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+    
+        <div class="item">
+              <div class="">
+                <h3><kbd>Skills</kbd></h3>
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <tbody>
+                      <tr>
+                        <td>C</td>
+                        <td>C++</td>
+                        <td>JAVA</td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <td>MySql</td>
+                        <td>Laravel</td>
+                        <td>Oracle</td>
+                      </tr>
+                      <tr>
+                        <td>Python</td>
+                        <td>Bootstrap</td>
+                        <td>PhP</td>
+                      </tr>
+                      <tr>
+                        <td>Android</td>
+                        <td>ASP.Net</td>
+                        <td>VB.Net</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+      </div>
+      </div>
+    </div>
+  </div>
+    <div id="contact" class="contact">
+    <div class="header">
+      <h1>Contact details..</h1>
+      <p>You can connect me </p>
+    </div>
+    <a href="https://in.linkedin.com/in/hemant-upadhyay-380123147" target="_blank" ><img src="http://infoiaic.com/images/linkdin.png" class="contact-details"></a>
+    <a id='profile-link' href="https://github.com/freecodecamp" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" class="contact-details"></a>
+    <a href="https://www.instagram.com/___heman___/" target="_blank"><img src="https://instagram-brand.com/wp-content/uploads/2016/11/app-icon2.png"class="contact-details"></a>
+    <a href="upadhyayhemant16@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/happily-colored-snlogo/512/gmail-email-mail-logo-circle-material.png" class="contact-details"></a>
+    <a href="tel:+91-897-629-6475"><img src="https://images.vexels.com/media/users/3/137415/isolated/preview/0e475bb9b17b3fa4f94f31fba1635b8f-telephone-call-icon-logo-by-vexels.png" class="contact-details"></a>
+  </div>
+  <footer> 
+    <blockquote>
+  <p>"Success is a lousy teacher; it seduces smart people into thinking that they can’t lose."</p>
+  <footer><cite title="Source Title">Bill Gates</cite></footer>
+</blockquote>
+    <p>&copy; 2019. Created by Hemant Upadhyay</a></p>
+  </footer>
+</body>
+</html>

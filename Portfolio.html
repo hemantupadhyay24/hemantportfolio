@@ -38,8 +38,8 @@ table,tr, td,th{
 .intro {
   top: 0;
   background: #e0ebe8;
-  min-height: 55vh;
-  padding-top: 20vh;
+  min-height: 40vh;
+  padding-top: 15vh;
   padding-bottom: 20vh;
 }
 
@@ -51,7 +51,8 @@ nav ul {
   text-align: right;
   position: fixed;
   width: 100%;
-  background-color: #e0ebe8;
+background-color: #778899;
+        color: white;
 }
 
 nav ul li {
@@ -62,12 +63,12 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #008080;
+  color: #2F4F4F;
   text-decoration: none;
 }
 
 nav ul li a:hover {
-  color: green;
+  color: white;
 }
 
 .work {
@@ -120,10 +121,33 @@ nav ul li a:hover {
 
 
 .show-all:hover {
-  background: #E4F1FE;
-  color: green;
+  background: lightblue;
+  color: darkblue;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #778899;
 }
 
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: white;
+  color: #778899;
+}
+
+li a:hover:not(.active) {
+  background-color: white;
+  color:#778899 ;
+}
 @media only screen and (max-width: 500px) {
   nav ul {
     text-align: center;
@@ -131,10 +155,10 @@ nav ul li a:hover {
   nav ul li {
     margin: 20px;
   }
+}
   .project {
     margin: 40px 0;
   }
-}
 .education {
   background-color: lightgray;
 }
@@ -195,7 +219,7 @@ footer a {
 </style>
 <body>
   <nav>
-    <ul id='navbar'>
+    <ul>
       <li><a href="#welcome-section">About me</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
